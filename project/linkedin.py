@@ -27,8 +27,7 @@ def show():
         st.markdown(
             f"""
             <a href="https://www.linkedin.com" target="_blank">
-                <img src="data:image/jpg;base64,{st.image(image_path_linkedin, output_format='auto')}" 
-                    width="150" style="margin-bottom: 20px; border-radius: 10px;">
+                <img src="data:image/jpg;base64,{st.image(image_path_linkedin, output_format='auto')}">
             </a>
             """,
             unsafe_allow_html=True
