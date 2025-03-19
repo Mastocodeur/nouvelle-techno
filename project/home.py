@@ -1,4 +1,8 @@
 import streamlit as st
+import os
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+image_path = os.path.join(BASE_DIR, "images", "outils.jpg")
 
 def show():
     st.title("Accueil")
@@ -20,7 +24,7 @@ def show():
     
     # Affichage de l'image
     st.image(
-        "./images/outils.jpg",  
+        image_path,  
         #caption="Dashboard RSS - Suivi en temps réel",
         use_container_width=True
     )
