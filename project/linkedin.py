@@ -24,17 +24,12 @@ def show():
     # Affichage de l'image LinkedIn cliquable
     # Vérifier que l'image existe avant de l'afficher
     if os.path.exists(image_path_linkedin):
-        with open(image_path_linkedin, "rb") as img_file:
-            img_bytes = img_file.read()
-        img_base64 = f"data:image/jpeg;base64,{st.image(image_path_linkedin, output_format='auto')}"
-
         st.markdown(
             f"""
-            <div style="text-align: center;">
-                <a href="https://www.linkedin.com" target="_blank">
-                    <img src="{img_base64}" width="120" style="border-radius: 10px; box-shadow: 2px 2px 10px rgba(0,0,0,0.1);">
-                </a>
-            </div>
+            <a href="https://www.linkedin.com" target="_blank">
+                <img src="data:image/jpg;base64,{st.image(image_path_linkedin, output_format='JPEG')}" 
+                    width="120" style="border-radius: 10px;">
+            </a>
             """,
             unsafe_allow_html=True
         )
