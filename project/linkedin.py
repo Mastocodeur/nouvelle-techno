@@ -1,16 +1,10 @@
 import streamlit as st
 import os
-import base64
 
-def get_base64_image(image_path):
-    """Convertit une image locale en Base64 pour l'afficher dans un lien"""
-    with open(image_path, "rb") as file:
-        encoded = base64.b64encode(file.read()).decode()
-    return f"data:image/png;base64,{encoded}"
 
-# Définir le chemin de l'image
-IMAGE_PATH = os.path.join("images", "linkedin.png")
-link_url = "https://www.linkedin.com"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+image_path_linkedin = os.path.join(BASE_DIR, "images", "linkedin.jpg")
+
 
 # Liste des liens définis en dur dans le code
 LINKEDIN_LINKS = [
@@ -28,15 +22,12 @@ def show():
     st.title("🔗 Liens utiles - LinkedIn")
 
     # Affichage de l'image LinkedIn cliquable
-    if os.path.exists(IMAGE_PATH):
-        base64_img = get_base64_image(IMAGE_PATH)
-        st.markdown(
-            f'<a href="{link_url}" target="_blank">'
-            f'<img src="{base64_img}" width="150" style="margin-bottom: 20px;"></a>',
-            unsafe_allow_html=True
-        )
-    else:
-        st.warning(f"⚠️ Image LinkedIn non trouvée à : {IMAGE_PATH}")
+    
+    st.markdown(
+        f'<a href="{link_url}" target="_blank">'
+        f'<img src="{image_path_linkedin}" width="150" style="margin-bottom: 20px;"></a>',
+        unsafe_allow_html=True
+    )
 
     st.markdown("Voici une sélection de comptes LinkedIn qui proposent des newsletter et des groupes LinkedIn relatifs à notre sujet de veille :")
 
