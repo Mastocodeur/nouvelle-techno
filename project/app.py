@@ -16,7 +16,7 @@ from utils import clean_html, parse_date
 
 
 # Configuration générale de la page
-st.set_page_config(page_title="Dashboard RSS", layout="wide")
+st.set_page_config(page_title="Dashboard RSS", page_icon = "📱", layout="wide")
 
 
 def main():
