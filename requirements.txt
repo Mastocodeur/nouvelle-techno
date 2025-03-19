@@ -1,9 +1,10 @@
+--upgrade pip
 streamlit-option-menu
 feedparser
 rss
 streamlit
 pytz
 scholarly
-beautifulsoup
+beautifulsoup4
 datetime
 
