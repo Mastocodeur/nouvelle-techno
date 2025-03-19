@@ -32,9 +32,9 @@ def show():
 
     # Liste des liens utiles
     useful_links = [
-        {"title": "📂 Source du projet sur GitHub", "url": "https://github.com/mon-compte/mon-projet"},
+        {"title": "📂 Source du projet sur GitHub", "url": "https://github.com/Mastocodeur/nouvelle-techno/tree/main"},
         {"title": "📖 Documentation sur les flux RSS", "url": "https://fr.wikipedia.org/wiki/RSS"},
-        {"title": "📬 Contact / Signaler un problème", "url": "mailto:contact@example.com"},
+        {"title": "📬 Contact / Signaler un problème", "url": "mailto:remy.gasmi@gmail.com"},
     ]
 
     # Grille en 2 colonnes
