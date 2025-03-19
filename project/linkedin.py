@@ -23,16 +23,9 @@ def show():
 
     # Affichage de l'image LinkedIn cliquable
     # Vérifier que l'image existe avant de l'afficher
-    if os.path.exists(image_path_linkedin):
-        st.markdown(
-            f"""
-                <img src="data:image/jpg;base64,{st.image(image_path_linkedin, output_format='JPEG')}" 
-                    width="10" ">
-            """,
-            unsafe_allow_html=True
-        )
-    else:
-        st.warning("⚠️ Image LinkedIn introuvable ! Vérifie son chemin dans `images/`.")
+    st.image(image_path_linkedin)  # Affiche l’image avec taille réduite
+    st.markdown("[🔗 Voir sur LinkedIn](https://www.linkedin.com)", unsafe_allow_html=True)
+
 
     st.markdown("Voici une sélection de comptes LinkedIn qui proposent des newsletter et des groupes LinkedIn relatifs à notre sujet de veille :")
 
