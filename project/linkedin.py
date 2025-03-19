@@ -26,9 +26,8 @@ def show():
     if os.path.exists(image_path_linkedin):
         st.markdown(
             f"""
-            <a href="https://www.linkedin.com" target="_blank">
                 <img src="data:image/jpg;base64,{st.image(image_path_linkedin, output_format='JPEG')}" 
-                    width="120" style="border-radius: 10px;">
+                    width="50" style="border-radius: 10px;">
             </a>
             """,
             unsafe_allow_html=True
