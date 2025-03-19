@@ -20,7 +20,7 @@ def show():
     
     # Affichage de l'image
     st.image(
-        "images/outils.jpg",  
+        "/images/outils.jpg",  
         #caption="Dashboard RSS - Suivi en temps réel",
         use_container_width=True
     )
