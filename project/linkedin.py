@@ -24,7 +24,7 @@ def show():
     # Affichage de l'image LinkedIn cliquable
     
     st.markdown(
-        f'<a href="{link_url}" target="_blank">'
+        f'<a href="https://www.linkedin.com" target="_blank">'
         f'<img src="{image_path_linkedin}" width="150" style="margin-bottom: 20px;"></a>',
         unsafe_allow_html=True
     )
