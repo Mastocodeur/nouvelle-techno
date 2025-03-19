@@ -27,8 +27,7 @@ def show():
         st.markdown(
             f"""
                 <img src="data:image/jpg;base64,{st.image(image_path_linkedin, output_format='JPEG')}" 
-                    width="50" style="border-radius: 10px;">
-            </a>
+                    width="10" ">
             """,
             unsafe_allow_html=True
         )
