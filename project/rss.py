@@ -6,6 +6,11 @@ from datetime import datetime, timedelta
 import pytz
 from bs4 import BeautifulSoup
 from utils import clean_html, parse_date
+import os
+
+# Chemin du fichier de données
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+data_path = os.path.join(BASE_DIR, "data", "rss_urls.csv")
 
 # Définition des catégories et mots-clés
 CATEGORIES = {
@@ -34,7 +39,7 @@ DATE_MIN = DATE_REFERENCE - timedelta(days=10 * 365)
 @st.cache_data(ttl=43200)
 def load_rss_urls():
     try:
-        df = pd.read_csv("data/rss_urls.csv", header=None)
+        df = pd.read_csv(data_path, header=None)
         return df[0].tolist()
     except Exception as e:
         st.error(f"Erreur lors du chargement du fichier CSV : {e}")
