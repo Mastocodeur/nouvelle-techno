@@ -1,7 +1,8 @@
---upgrade pip
 streamlit-option-menu
 feedparser
 rss
+pandas
+numpy
 streamlit
 pytz
 scholarly
