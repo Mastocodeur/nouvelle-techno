@@ -22,12 +22,19 @@ def show():
     st.title("🔗 Liens utiles - LinkedIn")
 
     # Affichage de l'image LinkedIn cliquable
-    
-    st.markdown(
-        f'<a href="https://www.linkedin.com" target="_blank">'
-        f'<img src="https://raw.githubusercontent.com/Mastocodeur/nouvelle-techno/main/images/linkedin.jpg" width="150" style="margin-bottom: 20px;"></a>',
-        unsafe_allow_html=True
-    )
+    # Vérifier que l'image existe avant de l'afficher
+    if os.path.exists(image_path_linkedin):
+        st.markdown(
+            f"""
+            <a href="https://www.linkedin.com" target="_blank">
+                <img src="data:image/jpg;base64,{st.image(image_path_linkedin, output_format='auto')}" 
+                    width="150" style="margin-bottom: 20px; border-radius: 10px;">
+            </a>
+            """,
+            unsafe_allow_html=True
+        )
+    else:
+        st.warning(f"⚠️ Image introuvable : {image_path_linkedin}")
 
     st.markdown("Voici une sélection de comptes LinkedIn qui proposent des newsletter et des groupes LinkedIn relatifs à notre sujet de veille :")
 
