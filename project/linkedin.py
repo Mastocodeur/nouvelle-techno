@@ -23,7 +23,7 @@ def show():
 
     # Affichage de l'image LinkedIn cliquable
     # Vérifier que l'image existe avant de l'afficher
-    st.image(image_path_linkedin, width = 50)  # Affiche l’image avec taille réduite
+    st.image(image_path_linkedin, width = 100)  # Affiche l’image avec taille réduite
     st.markdown("[🔗 Voir sur LinkedIn](https://www.linkedin.com)", unsafe_allow_html=True)
 
 
