@@ -1,9 +1,9 @@
 streamlit-option-menu
-streamlit
+feedparser
 rss
+streamlit
 pytz
 scholarly
-feedparser
 beautifulsoup
 datetime
 
