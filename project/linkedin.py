@@ -25,7 +25,7 @@ def show():
     
     st.markdown(
         f'<a href="https://www.linkedin.com" target="_blank">'
-        f'<img src="{image_path_linkedin}" width="150" style="margin-bottom: 20px;"></a>',
+        f'<img src="https://raw.githubusercontent.com/Mastocodeur/nouvelle-techno/main/images/linkedin.jpg" width="150" style="margin-bottom: 20px;"></a>',
         unsafe_allow_html=True
     )
 
