@@ -1,1 +1,9 @@
 streamlit-option-menu
+streamlit
+rss
+pytz
+scholarly
+feedparser
+beautifulsoup
+datetime
+
