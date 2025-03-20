@@ -25,7 +25,7 @@ def main():
         menu_title=None,  # Pas de titre
         options=["Accueil", "Flux RSS", "Youtube", "LinkedIn", "Google Scholar"],  # Pages
         icons=["house", "rss", "youtube", "linkedin", "google"],  # Icônes bootstrap
-        menu_icon="cast",  # Icône du menu (si tu veux l'activer)
+        menu_icon="cast",  # Icône du menu 
         default_index=0,  # Page par défaut
         orientation="horizontal",  # Horizontal navbar
         styles={
