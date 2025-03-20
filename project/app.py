@@ -5,7 +5,6 @@ import home
 import rss
 import youtube
 import google_scholar  
-# import gmail  # Commenté si non utilisé
 import linkedin
 from bs4 import BeautifulSoup
 import feedparser
